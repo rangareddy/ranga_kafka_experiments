@@ -45,7 +45,7 @@ public class KafkaSecureProducerDemo {
         Producer<String, String> kafkaProducer = null;
         try {
             kafkaProducer = new KafkaProducer<>(props);
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 1000; i++) {
                 ProducerRecord<String, String> producerRecord = new ProducerRecord<>(topicName, Integer.toString(i), "test message - " + i);
                 kafkaProducer.send(producerRecord, new Callback() {
                     @Override
