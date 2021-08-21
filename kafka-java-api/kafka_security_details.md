@@ -16,19 +16,18 @@
 ## Creating a Kafka topic
 
 ```sh
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --zookeeper node1.hadoop.com:2181,node2.hadoop.com --replication-factor 1 --partitions 2 --topic test
+/usr/hdp/current/kafka-broker/bin/kafka-topics.sh \
+--create \
+--zookeeper node1.hadoop.com:2181,node2.hadoop.com \
+--replication-factor 1 \
+--partitions 2 \
+--topic test
 ```
 
 ## Listing Kafka topics
 
 ```sh
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --list --zookeeper node1.hadoop.com:2181,node2.hadoop.com
-```
-
-# swithc kafka user
-
-```sh
-su kafka
 ```
 
 ## Specify the path to the JAAS configuration file as one of your JVM parameters.
