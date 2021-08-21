@@ -1,2 +1,1 @@
-# ranga-kafka-poc
-Kafka Examples
+# My Kafka Experiments
